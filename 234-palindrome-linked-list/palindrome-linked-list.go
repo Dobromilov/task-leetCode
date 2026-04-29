@@ -28,8 +28,6 @@ func isPalindrome(head *ListNode) bool {
     array = append(array,curl.Val)
     temp := reverseInts(array)
     
-    fmt.Println(temp,array)
-    
     for i:=0; i<len(array); i++{
         if array[i]!=temp[i]{
             return false
