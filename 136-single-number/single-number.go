@@ -3,10 +3,13 @@ func singleNumber(nums []int) int {
     for i := 0; i<len(nums) ; i++{
         m[nums[i]]++
     }
+    res:=0
     for _, n := range nums{
-        if m[n] == 1{
-            return n
+        v, _ := m[n]
+        if v == 1 {
+            res = n
+            break
         }
     }
-    return 0
+    return res
 }
