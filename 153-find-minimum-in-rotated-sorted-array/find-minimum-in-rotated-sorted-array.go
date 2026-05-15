@@ -6,6 +6,7 @@ func findMin(nums []int) int {
             mn = val
             break
         }
+        temp=val
     }
     return mn
 }
